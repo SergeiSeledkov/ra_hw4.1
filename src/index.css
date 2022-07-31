@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: Lucida Console;
+  font-weight: 700;
+}
+
+.inputHex {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: 2px solid rgba(42, 42, 42, 0.7);
+  font: inherit;
+  font-size: 26px;
+  text-align: center;
+}
+
+.inputHex:focus {
+  outline: none;
+}
+
+.outputRgb {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  font-size: 18px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.text {
+  z-index: 1;
+
+  color: #ffffff;
+}
